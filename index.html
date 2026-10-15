@@ -1,5 +1,6 @@
-<!DOCTYPE html>
-<html lang="en"><head>
+<!doctype html>
+<html lang="en">
+<head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#ff5a8f">
@@ -161,7 +162,7 @@
           <div class="weather-grid">
             <label class="weather-option"><input type="radio" name="weather" value="sunny"><span><b>☀️</b>Sunny</span></label>
             <label class="weather-option"><input type="radio" name="weather" value="cloudy"><span><b>☁️</b>Cloudy</span></label>
-            <label class="weather-option"><input type="radio" name="weather" value="breezy" checked=""><span><b>🍃</b>Breezy</span></label>
+            <label class="weather-option"><input type="radio" name="weather" value="breezy" checked><span><b>🍃</b>Breezy</span></label>
             <label class="weather-option"><input type="radio" name="weather" value="rainy"><span><b>🌧️</b>Rainy</span></label>
             <label class="weather-option"><input type="radio" name="weather" value="windy"><span><b>💨</b>Windy</span></label>
             <label class="weather-option"><input type="radio" name="weather" value="snowy"><span><b>❄️</b>Snowy</span></label>
@@ -172,7 +173,7 @@
           <label class="field-label" for="formality">How formal does today need to feel?</label>
           <select id="formality">
             <option value="relaxed">Relaxed</option>
-            <option value="casual" selected="">Casual and neat</option>
+            <option value="casual" selected>Casual and neat</option>
             <option value="smart">Smart casual</option>
             <option value="polished">Polished</option>
             <option value="formal">Formal</option>
@@ -185,53 +186,9 @@
 
       <section class="panel results" aria-live="polite" aria-labelledby="resultTitle">
         <div class="panel-title"><h2 id="resultTitle">Two possible responses</h2><span class="step-badge">OUTPUT</span></div>
-        <p class="context-line" id="contextLine">For 15°C, breezy weather, at a casual and neat level:</p>
-        <div class="looks" id="looks"><article class="look-card">
-        <div class="look-visual"><span class="look-number">LOOK 01</span><svg class="character" viewBox="0 0 240 300" role="img" aria-label="Chibi character wearing Hoodie, Jeans, Sneakers">
-        <ellipse cx="120" cy="283" rx="58" ry="9" fill="#2b1d45" opacity=".14"></ellipse>
-        <path d="M65 85Q63 22 120 18q58 2 57 68l-9 72q-20 17-48 15-29 2-49-15z" fill="#33253c" stroke="#2b1d45" stroke-width="3.5"></path>
-        <circle cx="68" cy="83" r="12" fill="#efb394" stroke="#2b1d45" stroke-width="3.5"></circle>
-        <circle cx="172" cy="83" r="12" fill="#efb394" stroke="#2b1d45" stroke-width="3.5"></circle>
-        <circle cx="120" cy="78" r="53" fill="#efb394" stroke="#2b1d45" stroke-width="3.5"></circle>
-        <path d="M70 71q8-43 50-43 36 0 49 35-25 1-45-17-18 25-54 25z" fill="#33253c" stroke="#2b1d45" stroke-width="3.5" stroke-linejoin="round"></path>
-        <ellipse cx="99" cy="79" rx="7" ry="9" fill="#2b1d45"></ellipse><ellipse cx="141" cy="79" rx="7" ry="9" fill="#2b1d45"></ellipse>
-        <circle cx="101" cy="76" r="2.4" fill="white"></circle><circle cx="143" cy="76" r="2.4" fill="white"></circle>
-        <path d="M111 100q9 8 18 0" fill="none" stroke="#2b1d45" stroke-width="3" stroke-linecap="round"></path>
-        <ellipse cx="87" cy="96" rx="10" ry="5" fill="#ec8798" opacity=".45"></ellipse><ellipse cx="153" cy="96" rx="10" ry="5" fill="#ec8798" opacity=".45"></ellipse>
-        <path d="M109 124v16h22v-16" fill="#efb394" stroke="#2b1d45" stroke-width="3"></path>
-        <path d="M88 139q32-17 64 0l11 59q-43 18-86 0z" fill="#7f8ff4" stroke="#2b1d45" stroke-width="3.5" stroke-linejoin="round"></path>
-        <path d="M89 147q-18 18-22 52m84-52q18 18 22 52" fill="none" stroke="#7f8ff4" stroke-width="17" stroke-linecap="round"></path>
-        <circle cx="66" cy="203" r="9" fill="#efb394" stroke="#2b1d45" stroke-width="3"></circle><circle cx="174" cy="203" r="9" fill="#efb394" stroke="#2b1d45" stroke-width="3"></circle>
-        <path d="M84 194h72l-7 71-27 1-2-43-2 43-27-1z" fill="#49699a" stroke="#2b1d45" stroke-width="3.5" stroke-linejoin="round"></path><path d="M120 208v55" stroke="#2b1d45" stroke-width="3"></path>
-        <path d="M78 268h34q3 16-18 16H76zM128 268h34l2 16h-18q-21 0-18-16z" fill="#fff5df" stroke="#2b1d45" stroke-width="3.5" stroke-linejoin="round"></path>
-        <path d="M92 142q28 24 56 0" fill="none" stroke="#ffcf55" stroke-width="5"></path><path d="M101 177h38q-2 17-19 17t-19-17z" fill="none" stroke="#2b1d45" stroke-width="2.8"></path><path d="M110 147l-2 19m22-19 2 19" stroke="#2b1d45" stroke-width="2.3" stroke-linecap="round"></path>
-        
-      </svg></div>
-        <div class="look-body"><h3>Everyday comfort</h3><div class="piece-list"><span>Hoodie</span><span>Jeans</span><span>Sneakers</span></div><p>Comfortable for sitting, walking, and moving through the day.</p></div>
-      </article><article class="look-card">
-        <div class="look-visual"><span class="look-number">LOOK 02</span><svg class="character" viewBox="0 0 240 300" role="img" aria-label="Chibi character wearing Long-sleeve top, Long skirt, Flat shoes">
-        <ellipse cx="120" cy="283" rx="58" ry="9" fill="#2b1d45" opacity=".14"></ellipse>
-        <circle cx="158" cy="39" r="24" fill="#4b2e2a" stroke="#2b1d45" stroke-width="3.5"></circle><path d="M66 86Q63 24 120 20q57 2 55 66l-8 49q-22 17-47 16-27 1-47-16z" fill="#4b2e2a" stroke="#2b1d45" stroke-width="3.5"></path>
-        <circle cx="68" cy="83" r="12" fill="#f5c6aa" stroke="#2b1d45" stroke-width="3.5"></circle>
-        <circle cx="172" cy="83" r="12" fill="#f5c6aa" stroke="#2b1d45" stroke-width="3.5"></circle>
-        <circle cx="120" cy="78" r="53" fill="#f5c6aa" stroke="#2b1d45" stroke-width="3.5"></circle>
-        <path d="M70 69q11-42 51-42 37 0 48 39-18-4-36-21-20 21-63 24z" fill="#4b2e2a" stroke="#2b1d45" stroke-width="3.5" stroke-linejoin="round"></path>
-        <ellipse cx="99" cy="79" rx="7" ry="9" fill="#2b1d45"></ellipse><ellipse cx="141" cy="79" rx="7" ry="9" fill="#2b1d45"></ellipse>
-        <circle cx="101" cy="76" r="2.4" fill="white"></circle><circle cx="143" cy="76" r="2.4" fill="white"></circle>
-        <path d="M111 100q9 8 18 0" fill="none" stroke="#2b1d45" stroke-width="3" stroke-linecap="round"></path>
-        <ellipse cx="87" cy="96" rx="10" ry="5" fill="#ec8798" opacity=".45"></ellipse><ellipse cx="153" cy="96" rx="10" ry="5" fill="#ec8798" opacity=".45"></ellipse>
-        <path d="M109 124v16h22v-16" fill="#f5c6aa" stroke="#2b1d45" stroke-width="3"></path>
-        <path d="M88 139q32-17 64 0l11 59q-43 18-86 0z" fill="#f59ac0" stroke="#2b1d45" stroke-width="3.5" stroke-linejoin="round"></path>
-        <path d="M89 147q-18 18-22 52m84-52q18 18 22 52" fill="none" stroke="#f59ac0" stroke-width="17" stroke-linecap="round"></path>
-        <circle cx="66" cy="203" r="9" fill="#f5c6aa" stroke="#2b1d45" stroke-width="3"></circle><circle cx="174" cy="203" r="9" fill="#f5c6aa" stroke="#2b1d45" stroke-width="3"></circle>
-        <path d="M86 195h68l17 57q-51 18-102 0z" fill="#665090" stroke="#2b1d45" stroke-width="3.5" stroke-linejoin="round"></path><path d="M96 252l-2 23m50-23 2 23" stroke="#f5c6aa" stroke-width="15" stroke-linecap="round"></path>
-        <path d="M78 268h34q3 16-18 16H76zM128 268h34l2 16h-18q-21 0-18-16z" fill="#fff5df" stroke="#2b1d45" stroke-width="3.5" stroke-linejoin="round"></path>
-        <path d="M101 141q19 13 38 0" fill="none" stroke="#63d6bf" stroke-width="5" stroke-linecap="round"></path>
-        
-      </svg></div>
-        <div class="look-body"><h3>Easy long silhouette</h3><div class="piece-list"><span>Long-sleeve top</span><span>Long skirt</span><span>Flat shoes</span></div><p>A neat full-coverage option with a different silhouette.</p></div>
-      </article></div>
-        <div class="coat-advice" id="coatAdvice"><div class="coat-icon">🍃</div><div><b>Bring one removable layer</b><p>A light jacket or cardigan is useful between buildings and after sunset.</p></div></div>
+        <p class="context-line" id="contextLine"></p>
+        <div class="looks" id="looks"></div>
+        <div class="coat-advice" id="coatAdvice"></div>
       </section>
     </main>
 
@@ -241,12 +198,12 @@
         <p>The code decomposes one human decision into three weighted signals. Formality describes what the situation expects, so the same activity can move between levels.</p>
       </div>
       <div class="decision-flow">
-        <div class="flow-step"><small>01 · Formality · 50%</small><b id="flowFormality">Casual and neat keeps comfort intentional.</b></div>
-        <div class="flow-step"><small>02 · Temperature · 40%</small><b id="flowTemp">15°C suggests light layers with coverage.</b></div>
-        <div class="flow-step"><small>03 · Weather · 10%</small><b id="flowWeather">Breeze favors a removable layer.</b></div>
+        <div class="flow-step"><small>01 · Formality · 50%</small><b id="flowFormality">Casual and neat keeps comfort without looking careless.</b></div>
+        <div class="flow-step"><small>02 · Temperature · 40%</small><b id="flowTemp">15°C sets the clothing weight.</b></div>
+        <div class="flow-step"><small>03 · Weather · 10%</small><b id="flowWeather">Breeze adds a removable layer.</b></div>
         <div class="flow-step"><small>04 · Two responses</small><b>Return two silhouettes that satisfy the weighted decision.</b></div>
       </div>
-      <p class="model-explanation" id="modelExplanation"><b>Weighted decision:</b> Formality (50%) has the strongest influence. Casual and neat protects comfort while avoiding pieces that look careless or overly lounge-like. Temperature (40%) sets the fabric weight: light layers with coverage. Weather (10%) adds “Light jacket” as the finishing protection. The two final looks respond to the same weighted conditions with different silhouettes.</p>
+      <p class="model-explanation" id="modelExplanation"></p>
     </section>
 
     <footer>Built as a computational representation of everyday clothing decisions. No personal data or external services are used.</footer>
@@ -480,6 +437,5 @@
     $('#generate').addEventListener('click',()=>{render();$('#resultTitle').scrollIntoView({behavior:'smooth',block:'start'})});
     render();
   </script>
-
-
-</body></html>
+</body>
+</html>
